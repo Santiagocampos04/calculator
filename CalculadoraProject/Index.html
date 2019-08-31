@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+<!---here is all the reference to the documents  -->
+    <script src="doc.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="look.css">
+
+    <title>Calculadora</title>
+
+  </head>
+<!--- The Calculadora is made with a input that the user cant touch and with a table
+  with buttons. -->
+  <body>
+
+    <div class="todo">
+
+<!-- Here is the input or screen -->
+      <div class="pantalla" id=pantalla>
+    <input type="text" id="screeninput" value=""  disabled>
+      </div>
+
+
+      <div class="" >
+    <!-- Here is the buttons and the table. Every time the user press a button
+  a Js make an action related with his id. -->
+        <table>
+          <!-- in this table, there are 4 kind of buttons oper: +-*/, numer:nummbers ,
+          special: DEL, AC and coma. -->
+          <tr>
+            <td><button class="special" type="button"  id="AC" onClick="delet()">AC</button></td>
+            <td><button class="special" type="button " id="DEL" onClick="dell()">DEL</button></td>
+            <!-- the opration %, its not porcentage , its modulus -->
+            <td><button class="oper" type="button" id="Porcent"  onClick="add(this.id)">%</button></td>
+            <td><button class="oper" type="button" id="Divis"  onClick="add(this.id)">/</button></td>
+          </tr>
+          <tr>
+            <td><button class="numer" type="button" id="siete"  onClick="add(this.id)">7</button></td>
+            <td><button class="numer" type="button" id="ocho"  onClick="add(this.id)">8</button></td>
+            <td><button class="numer" type="button" id="nueve"  onClick="add(this.id)">9</button></td>
+            <td><button class="oper" type="button" id="por"  onClick="add(this.id)">*</button></td>
+          </tr>
+          <tr>
+            <td><button class="numer" type="button" id="cuatro"  onClick="add(this.id)">4</button></td>
+            <td><button class="numer" type="button" id="cinco"  onClick="add(this.id)">5</button></td>
+            <td><button class="numer" type="button" id="seis"  onClick="add(this.id)">6</button></td>
+            <td><button class="oper" type="button" id="menos"  onClick="add(this.id)">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="numer" type="button" id="uno"  onClick="add(this.id)">1</button></td>
+            <td><button class="numer" type="button" id="dos"  onClick="add(this.id)">2</button></td>
+            <td><button class="numer" type="button" id="tres"  onClick="add(this.id)">3</button></td>
+            <td><button class="oper" type="button" id="mas"  onClick="add(this.id)">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="special" type="button" id="coma"  onClick="add(this.id)">.</button></td>
+            <td><button class="numer" type="button" id="cero"  onClick="add(this.id)">0</button></td>
+            <td colspan=2><button class="igual" type="button" id="igual"  onClick="result()" >=</button></td>
+          </tr>
+
+        </table>
+      </div>
+
+    </div>
+
+  </body>
+  <footer>
+    <!-- only a footer-->
+    <p>My Design ® </p>
+  </footer>
+</html>
